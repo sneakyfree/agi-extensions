@@ -1,0 +1,17 @@
+measurement,model,corpus,bpt
+cross_corpus,syn2,syn2,0.07731239293826354
+cross_corpus,syn2,syn4,38.14125014350197
+cross_corpus,syn2,syn8,39.6741136244465
+cross_corpus,syn2,syn12,42.49187737618275
+cross_corpus,syn4,syn2,24.75123679525128
+cross_corpus,syn4,syn4,0.026394521393216967
+cross_corpus,syn4,syn8,30.454390628765463
+cross_corpus,syn4,syn12,27.411205776890306
+cross_corpus,syn8,syn2,39.088018764085355
+cross_corpus,syn8,syn4,39.04293454405757
+cross_corpus,syn8,syn8,7.382541029548992
+cross_corpus,syn8,syn12,38.56955023376588
+cross_corpus,syn12,syn2,31.964711999696096
+cross_corpus,syn12,syn4,22.429399463820605
+cross_corpus,syn12,syn8,26.03613706604301
+cross_corpus,syn12,syn12,5.477732733375283

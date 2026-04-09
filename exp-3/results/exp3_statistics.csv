@@ -1,0 +1,5 @@
+test,statistic,p_value,significant,interpretation
+Welch's t-test (BPT),0.43144937961010593,0.6880241381247201,False,"Transformer mean: 3.495, Serial mean: 3.346"
+Cohen's d (BPT),0.39671608138224285,,False,Effect size: 0.397 (small)
+Levene's test (variance),0.00098258949153482,0.9751261170612299,False,"Transformer variance: 10.283, Serial variance: 10.439"
+Mann-Whitney U (structural bonus),6.0,1.0,False,"Transformer bonus: 6.839±0.151, Serial bonus: 6.782±0.249"

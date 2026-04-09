@@ -1,0 +1,8 @@
+model,arch_type,energy_per_token_mJ,mean_power_W,mean_temp_C
+EleutherAI/pythia-160m,transformer,0.1242834865115583,32.31,34.0
+EleutherAI/pythia-410m,transformer,0.31984721310436726,40.36,37.0
+EleutherAI/pythia-1.4b,transformer,1.6708154766820371,92.13,44.0
+openai-community/gpt2-medium,transformer,0.5549922492355108,76.39,41.0
+state-spaces/mamba-130m-hf,serial,69.9017720296979,114.37,40.0
+state-spaces/mamba-370m-hf,serial,148.39124182747167,119.36727272727272,42.0
+state-spaces/mamba-1.4b-hf,serial,167.60550852568653,136.3436363636364,43.27272727272727
