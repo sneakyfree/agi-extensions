@@ -1,0 +1,13 @@
+modality,metric,value
+text,raw_gzip_bpb,2.7787145046245687
+text,pythia410m_bpt,13.604859923118642
+vision,gzip_compress_ratio_mean,0.6170456628282265
+vision,raw_bits_per_pixel_mean,14.809095907877435
+vision,model_bits_per_patch::facebook/deit-base-patch16-224,0.04195799034135416
+vision,model_bits_per_image::facebook/deit-base-patch16-224,8.22376627445221
+vision,model_bits_per_patch::facebook/deit-small-patch16-224,0.041167653800640254
+vision,model_bits_per_image::facebook/deit-small-patch16-224,8.068860311317444
+vision,model_bits_per_patch::google/vit-base-patch16-224,0.022689050941522147
+vision,model_bits_per_image::google/vit-base-patch16-224,4.447054073247849
+vision,model_bits_per_patch::google/vit-large-patch16-224,0.021245301432306952
+vision,model_bits_per_image::google/vit-large-patch16-224,4.164079168098536

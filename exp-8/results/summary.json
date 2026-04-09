@@ -1,0 +1,191 @@
+{
+  "bits_per_patch_by_model": {
+    "facebook/deit-base-patch16-224": 0.04195799034135416,
+    "facebook/deit-small-patch16-224": 0.041167653800640254,
+    "google/vit-base-patch16-224": 0.022689050941522147,
+    "google/vit-large-patch16-224": 0.021245301432306952
+  },
+  "bits_per_image_by_model": {
+    "facebook/deit-base-patch16-224": 8.22376627445221,
+    "facebook/deit-small-patch16-224": 8.068860311317444,
+    "google/vit-base-patch16-224": 4.447054073247849,
+    "google/vit-large-patch16-224": 4.164079168098536
+  },
+  "attention_entropy_by_model": {
+    "facebook/deit-base-patch16-224": 6.097784435749054,
+    "facebook/deit-small-patch16-224": 5.567773867154122,
+    "google/vit-base-patch16-224": 6.058560036420822,
+    "google/vit-large-patch16-224": 6.7970845826148985
+  },
+  "shuffle_means": [
+    {
+      "model": "facebook/deit-base-patch16-224",
+      "condition": "original",
+      "bits_per_image": 8.534404989719391
+    },
+    {
+      "model": "facebook/deit-base-patch16-224",
+      "condition": "patches16",
+      "bits_per_image": 8.120928913116455
+    },
+    {
+      "model": "facebook/deit-base-patch16-224",
+      "condition": "pixels",
+      "bits_per_image": 5.781874750614167
+    },
+    {
+      "model": "facebook/deit-base-patch16-224",
+      "condition": "quadrants",
+      "bits_per_image": 8.533146238327026
+    },
+    {
+      "model": "facebook/deit-base-patch16-224",
+      "condition": "rows",
+      "bits_per_image": 6.966722983837128
+    },
+    {
+      "model": "facebook/deit-small-patch16-224",
+      "condition": "original",
+      "bits_per_image": 7.972723996162414
+    },
+    {
+      "model": "facebook/deit-small-patch16-224",
+      "condition": "patches16",
+      "bits_per_image": 7.580227343082428
+    },
+    {
+      "model": "facebook/deit-small-patch16-224",
+      "condition": "pixels",
+      "bits_per_image": 7.293678566455841
+    },
+    {
+      "model": "facebook/deit-small-patch16-224",
+      "condition": "quadrants",
+      "bits_per_image": 7.595140648841858
+    },
+    {
+      "model": "facebook/deit-small-patch16-224",
+      "condition": "rows",
+      "bits_per_image": 7.0586145439147945
+    },
+    {
+      "model": "google/vit-base-patch16-224",
+      "condition": "original",
+      "bits_per_image": 4.307084461648948
+    },
+    {
+      "model": "google/vit-base-patch16-224",
+      "condition": "patches16",
+      "bits_per_image": 6.924472696691751
+    },
+    {
+      "model": "google/vit-base-patch16-224",
+      "condition": "pixels",
+      "bits_per_image": 7.76571915730834
+    },
+    {
+      "model": "google/vit-base-patch16-224",
+      "condition": "quadrants",
+      "bits_per_image": 4.777305670402944
+    },
+    {
+      "model": "google/vit-base-patch16-224",
+      "condition": "rows",
+      "bits_per_image": 5.8117442929148675
+    },
+    {
+      "model": "google/vit-large-patch16-224",
+      "condition": "original",
+      "bits_per_image": 4.110729924205691
+    },
+    {
+      "model": "google/vit-large-patch16-224",
+      "condition": "patches16",
+      "bits_per_image": 6.56817924322933
+    },
+    {
+      "model": "google/vit-large-patch16-224",
+      "condition": "pixels",
+      "bits_per_image": 7.484727228164673
+    },
+    {
+      "model": "google/vit-large-patch16-224",
+      "condition": "quadrants",
+      "bits_per_image": 4.549475084580481
+    },
+    {
+      "model": "google/vit-large-patch16-224",
+      "condition": "rows",
+      "bits_per_image": 5.502234716951847
+    }
+  ],
+  "density_rows": [
+    {
+      "modality": "text",
+      "metric": "raw_gzip_bpb",
+      "value": 2.7787145046245687
+    },
+    {
+      "modality": "text",
+      "metric": "pythia410m_bpt",
+      "value": 13.604859923118642
+    },
+    {
+      "modality": "vision",
+      "metric": "gzip_compress_ratio_mean",
+      "value": 0.6170456628282265
+    },
+    {
+      "modality": "vision",
+      "metric": "raw_bits_per_pixel_mean",
+      "value": 14.809095907877435
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_patch::facebook/deit-base-patch16-224",
+      "value": 0.04195799034135416
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_image::facebook/deit-base-patch16-224",
+      "value": 8.22376627445221
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_patch::facebook/deit-small-patch16-224",
+      "value": 0.041167653800640254
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_image::facebook/deit-small-patch16-224",
+      "value": 8.068860311317444
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_patch::google/vit-base-patch16-224",
+      "value": 0.022689050941522147
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_image::google/vit-base-patch16-224",
+      "value": 4.447054073247849
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_patch::google/vit-large-patch16-224",
+      "value": 0.021245301432306952
+    },
+    {
+      "modality": "vision",
+      "metric": "model_bits_per_image::google/vit-large-patch16-224",
+      "value": 4.164079168098536
+    }
+  ],
+  "multimodal": [
+    {
+      "condition": "skipped",
+      "bpt": NaN
+    }
+  ],
+  "elapsed_sec": 544.6589050292969
+}

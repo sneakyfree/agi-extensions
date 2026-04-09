@@ -8,13 +8,17 @@
 
 This repository contains the complete experimental suite for **Paper 7: The Throughput Basin Origin**, which definitively answers whether the observed convergence to τ ≈ 3-6 bits/event in serial decoding systems is driven by DATA, ARCHITECTURE, or PHYSICS.
 
-**THE ANSWER: The throughput basin is DATA-DRIVEN.**
+**Tentative finding (read with §Adversarial Review below):** at 92M parameters, on Markov synthetic data, the achieved BPT tracks training-corpus token entropy rather than collapsing to ~4 BPT. The full strength of "the basin is data-driven" is **not** earned by these experiments in isolation; the internal adversarial review names the specific re-runs (Paper 7.1) required before that stronger statement holds.
+
+> ### ⚠ Read this before the results
+>
+> This repository ships with its own internal adversarial review at [`review/adversarial_review.md`](review/adversarial_review.md). The review identifies four blocking issues in the experimental record (self-eval vs cross-corpus diagonal disagreement, an Exp 6 vs Exp 2/3 BPT discrepancy that propagates into every reported φ, a BPT-vs-bits-per-source-symbol unit confound, and missing learning curves) plus several recommended re-runs. The formal manuscript (`paper/paper7_formal_draft.md`) §5b lists every item and scopes them as Paper 7.1. **The headline numbers in the tables below are reproduced verbatim from the experimental CSVs and have not been re-run; read them through the §5b caveats.** The institute's practice is to publish falsification attempts at the same time as the claims they constrain, not after.
 
 ## Background: Papers 1-6
 
 This work builds on the foundational Windstorm Institute research series establishing the throughput basin framework:
 
-**Repository:** [github.com/sneakyfree/fons-constraint](https://github.com/sneakyfree/fons-constraint)
+**Repository:** [github.com/Windstorm-Institute/fons-constraint](https://github.com/Windstorm-Institute/fons-constraint)
 
 ### Citations
 
@@ -231,4 +235,6 @@ For questions or collaborations:
 **Models Trained**: 5 synthetic GPT-2 models (92M params each)
 **Data Points**: 47,392 measurements across all experiments
 
-**THE ANSWER IS CLEAR: THE BASIN IS DATA-DRIVEN.**
+**Status:** Paper 7 is published with its internal adversarial review attached. The defensible claim is *"at 92M, on Markov synthetic data, training-corpus token entropy is the dominant predictor of achieved BPT and we find no positive evidence of a transformer-specific ~4-bit ceiling in this regime."* The stronger claim (*"the basin is data-driven, full stop"*) requires the Paper 7.1 re-runs scoped in `paper/paper7_formal_draft.md` §5b.
+
+**Exp 8 (Vision Basin, Phase 1):** vision arm complete (`exp-8/results/exp8a..c_*.csv`, 4 plots in `exp-8/plots/`). The multimodal arm (`exp8d_multimodal.csv`) is recorded as `skipped` / NaN in `summary.json` and is deferred to a debugged re-run before Paper 8 is finalized.
