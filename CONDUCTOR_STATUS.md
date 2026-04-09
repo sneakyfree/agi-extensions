@@ -60,4 +60,27 @@ The formal draft does correctly handle: SYN-12 capacity limit (§3.1 of review),
 **D. Website integration.** OK to clone `sneakyfree/windstorminstitute.org` and prepare a PR-style commit on a branch for review before push?
 
 ---
-*Updated by Conductor on initial survey. No git push operations have been performed.*
+
+## Update — execution log
+
+PI greenlit recommendations A–D. Steps executed:
+
+1. ✅ **Formal draft rewritten.** `paper/paper7_formal_draft.md` abstract and §7 conclusion replaced with defensible-claim language. New §5b "Internal Adversarial Review and Paper 7.1 Scope" added, listing all eight items from `review/adversarial_review.md` and the re-runs they call for.
+2. ✅ **agi-extensions README updated.** Adversarial-review callout block added directly under the headline. `fons-constraint` link corrected to `Windstorm-Institute/fons-constraint`. Closing line replaced with the "defensible vs stronger claim" framing. Exp 8 vision-only status noted.
+3. ✅ **Pushed to `sneakyfree/agi-extensions`.** Commit `83cf04d`, 29 files, 52K insertions. Includes `paper/paper7_formal_draft.md`, `review/adversarial_review.md`, `analysis/`, `website/`, `exp-8/`, `CONDUCTOR_STATUS.md`. `*.log` excluded by gitignore. No model weights, no credentials.
+4. ✅ **fons-constraint backlink.** `Windstorm-Institute/fons-constraint` README now links to `agi-extensions`. Commit `d225b2e`, pushed to `main`.
+5. 🟡 **Website branch prepared, awaiting PI review before push.** Cloned `sneakyfree/windstorminstitute.org` to `/tmp/wsi-site`, branch `paper7`. `index.html` diff staged (not committed, not pushed):
+   - Research Arc subtitle: "Six papers" → "Seven papers... and now, to falsification."
+   - New arc node: Paper 6 (site numbering) = "The Throughput Basin Origin" → linked to `github.com/sneakyfree/agi-extensions`.
+   - New publication card #06 with the defensible abstract and explicit "published with its internal adversarial review attached" framing.
+   - **Not** integrated yet: T5's long-form `paper7_article.md` as a new `articles/throughput-basin-origin.html` page. That's a follow-up if you want it.
+   - **Show-stopper to verify before push:** site uses `Paper 0..5` numbering (off-by-one from manuscript numbering). Paper 7 manuscript becomes Paper 6 on the site. Confirm that's what you want, or I can renumber to Paper 7 throughout.
+6. 🟡 **Exp 8 multimodal arm.** Shipped as deferred per recommendation C. Vision arm CSVs and 4 plots are in the push. Multimodal `summary.json: skipped, NaN` is preserved verbatim — not erased.
+
+## Outstanding decisions for the PI
+
+- **D-followup.** Approve the website `index.html` diff (shown in conversation; also reproducible via `cd /tmp/wsi-site && git diff`). Confirm site numbering: keep as Paper 6, or renumber to Paper 7 to match manuscripts? Once approved I commit on `paper7` branch and push.
+- **Article HTML.** Want me to convert `website/paper7_article.md` to a new `articles/throughput-basin-origin.html` page following the existing `articles/inherited-constraint.html` template? Adds ~30 min and a real article URL.
+- **Paper 7.1 ticket.** Should I open a tracking issue on `sneakyfree/agi-extensions` enumerating the eight items from §5b so they're visible to outside readers?
+- **`agi-extensions` org.** Note for future consistency: `fons-constraint` is under `Windstorm-Institute/`, but `agi-extensions` is under `sneakyfree/`. Worth a transfer at some point; not blocking.
+
