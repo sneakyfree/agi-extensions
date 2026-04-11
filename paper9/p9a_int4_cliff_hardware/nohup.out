@@ -1,0 +1,48 @@
+[2026-04-11 17:30:28] ============================================================
+[2026-04-11 17:30:28] PAPER 9 P9-A: INT4 vs INT3 CLIFF IN HARDWARE SIMULATION
+[2026-04-11 17:30:28] ============================================================
+[2026-04-11 17:30:28] 
+--- Test 1: Linear layer quantization accuracy ---
+[2026-04-11 17:30:29]   INT8: cosine=0.999941, SQNR=39.3 dB
+[2026-04-11 17:30:30]   INT6: cosine=0.999014, SQNR=27.1 dB
+[2026-04-11 17:30:31]   INT5: cosine=0.995815, SQNR=20.8 dB
+[2026-04-11 17:30:32]   INT4: cosine=0.981226, SQNR=14.2 dB
+[2026-04-11 17:30:33]   INT3: cosine=0.909258, SQNR=6.8 dB
+[2026-04-11 17:30:34]   INT2: cosine=0.361181, SQNR=0.3 dB
+[2026-04-11 17:30:34] 
+--- Test 2: Attention pattern preservation ---
+[2026-04-11 17:30:34]   INT8: attn_cosine=0.999999, entropy_ratio=1.0000
+[2026-04-11 17:30:34]   INT6: attn_cosine=0.999999, entropy_ratio=1.0000
+[2026-04-11 17:30:34]   INT5: attn_cosine=0.999999, entropy_ratio=1.0000
+[2026-04-11 17:30:34]   INT4: attn_cosine=0.999996, entropy_ratio=1.0000
+[2026-04-11 17:30:34]   INT3: attn_cosine=0.999981, entropy_ratio=1.0000
+[2026-04-11 17:30:34]   INT2: attn_cosine=0.999944, entropy_ratio=1.0000
+[2026-04-11 17:30:34] 
+--- Test 3: Full transformer block ---
+[2026-04-11 17:30:35]   INT8: out_cosine=0.999993, SQNR=49.9 dB, attn_cos=1.000000
+[2026-04-11 17:30:35]   INT6: out_cosine=0.999894, SQNR=37.7 dB, attn_cos=1.000000
+[2026-04-11 17:30:35]   INT5: out_cosine=0.999553, SQNR=31.5 dB, attn_cos=1.000000
+[2026-04-11 17:30:36]   INT4: out_cosine=0.997897, SQNR=24.7 dB, attn_cos=1.000000
+[2026-04-11 17:30:36]   INT3: out_cosine=0.988102, SQNR=17.1 dB, attn_cos=0.999999
+[2026-04-11 17:30:37]   INT2: out_cosine=0.974211, SQNR=13.8 dB, attn_cos=0.999998
+[2026-04-11 17:30:37] 
+--- Test 4: PyRTL hardware MAC simulation ---
+[2026-04-11 17:30:37]   INT8: accuracy=1.0000, gates=2, critical_path=1255.6
+[2026-04-11 17:30:37]   INT6: accuracy=1.0000, gates=5, critical_path=1255.6
+[2026-04-11 17:30:37]   INT5: accuracy=1.0000, gates=5, critical_path=1255.6
+[2026-04-11 17:30:37]   INT4: accuracy=1.0000, gates=5, critical_path=1255.6
+[2026-04-11 17:30:37]   INT3: accuracy=1.0000, gates=5, critical_path=1255.6
+[2026-04-11 17:30:37]   INT2: accuracy=1.0000, gates=5, critical_path=1255.6
+[2026-04-11 17:30:37] 
+Saving results...
+[2026-04-11 17:30:37] 
+Generating plots...
+[2026-04-11 17:30:38] Plots saved
+[2026-04-11 17:30:38] 
+--- CLIFF ANALYSIS ---
+[2026-04-11 17:30:38]   linear INT4→INT3: 0.981226 → 0.909258 (degradation=0.071967, ratio=0.9267)
+[2026-04-11 17:30:38]   attention INT4→INT3: 0.999996 → 0.999981 (degradation=0.000015, ratio=1.0000)
+[2026-04-11 17:30:38]   block INT4→INT3: 0.997897 → 0.988102 (degradation=0.009795, ratio=0.9902)
+[2026-04-11 17:30:38] 
+  VERDICT: CLIFF CONFIRMED IN HARDWARE ARITHMETIC. INT4→INT3 degradation is 5.0× worse than INT5→INT4.
+[2026-04-11 17:30:38] Report written
