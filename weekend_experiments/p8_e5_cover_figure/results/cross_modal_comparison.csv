@@ -1,0 +1,8 @@
+modality,source,source_entropy,model_throughput,structural_bonus,unit
+Language,Natural text,4.16,4.16,6.7,bits/token
+Vision (classification),STL-10,4.02,0.024,0,bits/patch
+Vision (MAE),STL-10,4.02,1.3902575946085438,0,bits/pixel
+Vision (next-patch),STL-10,4.02,0.7611721626023036,0.69,bits/pixel
+Audio (speech),speech,0,1.7960888475065824,-0.26617104140174513,bits/mel_dim
+Audio (music),music,0,1.688431174083245,-1.656705610800566,bits/mel_dim
+Audio (noise),noise,0,0.0,0.0,bits/mel_dim
