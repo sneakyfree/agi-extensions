@@ -1,0 +1,4 @@
+source,seed,mode,mse,bits_per_dim
+music,42,original,0.018769052457885165,2.861139370228359
+music,42,segment_shuffled,0.026040528368049303,2.6249379188210296
+music,42,frame_shuffled,0.9935531351196241,0.0

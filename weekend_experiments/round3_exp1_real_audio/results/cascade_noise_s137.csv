@@ -1,0 +1,4 @@
+source,seed,mode,mse,bits_per_dim
+noise,137,original,1.000304741157147,0.0
+noise,137,segment_shuffled,1.0031403103595224,0.0
+noise,137,frame_shuffled,1.4581454217599563,0.0
