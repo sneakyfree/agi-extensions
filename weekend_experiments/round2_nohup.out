@@ -1,0 +1,284 @@
+[2026-04-12 08:20:02] ============================================================
+[2026-04-12 08:20:02] ROUND 2 FOLLOW-UP EXPERIMENTS
+[2026-04-12 08:20:02] ============================================================
+[2026-04-12 08:20:02] ============================================================
+[2026-04-12 08:20:02] P8-E4b: AUDIO WITH REAL LJ SPEECH
+[2026-04-12 08:20:02] ============================================================
+[2026-04-12 08:20:02]   Downloading LJ Speech via torchaudio...
+  0%|          | 0.00/2.56G [00:00<?, ?B/s]  0%|          | 384k/2.56G [00:00<12:05, 3.79MB/s]  0%|          | 5.00M/2.56G [00:00<01:32, 29.6MB/s]  1%|          | 16.0M/2.56G [00:00<00:39, 68.3MB/s]  1%|          | 27.0M/2.56G [00:00<00:31, 86.6MB/s]  1%|▏         | 38.0M/2.56G [00:00<00:28, 96.7MB/s]  2%|▏         | 49.1M/2.56G [00:00<00:26, 102MB/s]   2%|▏         | 60.5M/2.56G [00:00<00:24, 107MB/s]  3%|▎         | 71.6M/2.56G [00:00<00:24, 110MB/s]  3%|▎         | 82.8M/2.56G [00:00<00:23, 112MB/s]  4%|▎         | 93.8M/2.56G [00:01<00:23, 113MB/s]  4%|▍         | 105M/2.56G [00:01<00:23, 114MB/s]   4%|▍         | 116M/2.56G [00:01<00:23, 114MB/s]  5%|▍         | 127M/2.56G [00:01<00:22, 115MB/s]  5%|▌         | 138M/2.56G [00:01<00:22, 114MB/s]  6%|▌         | 149M/2.56G [00:01<00:22, 115MB/s]  6%|▌         | 160M/2.56G [00:01<00:22, 115MB/s]  7%|▋         | 171M/2.56G [00:01<00:22, 115MB/s]  7%|▋         | 182M/2.56G [00:01<00:22, 115MB/s]  7%|▋         | 193M/2.56G [00:01<00:22, 113MB/s]  8%|▊         | 204M/2.56G [00:02<00:22, 114MB/s]  8%|▊         | 216M/2.56G [00:02<00:22, 114MB/s]  9%|▊         | 227M/2.56G [00:02<00:21, 115MB/s]  9%|▉         | 238M/2.56G [00:02<00:21, 115MB/s]  9%|▉         | 249M/2.56G [00:02<00:21, 113MB/s] 10%|▉         | 260M/2.56G [00:02<00:21, 114MB/s] 10%|█         | 271M/2.56G [00:02<00:21, 115MB/s] 11%|█         | 282M/2.56G [00:02<00:21, 115MB/s] 11%|█         | 294M/2.56G [00:02<00:21, 115MB/s] 12%|█▏        | 305M/2.56G [00:02<00:21, 115MB/s] 12%|█▏        | 316M/2.56G [00:03<00:21, 114MB/s] 12%|█▏        | 327M/2.56G [00:03<00:20, 115MB/s] 13%|█▎        | 338M/2.56G [00:03<00:20, 115MB/s] 13%|█▎        | 349M/2.56G [00:03<00:20, 115MB/s] 14%|█▎        | 360M/2.56G [00:03<00:20, 115MB/s] 14%|█▍        | 371M/2.56G [00:03<00:20, 115MB/s] 15%|█▍        | 382M/2.56G [00:03<00:20, 115MB/s] 15%|█▌        | 393M/2.56G [00:03<00:20, 115MB/s] 15%|█▌        | 404M/2.56G [00:03<00:20, 115MB/s] 16%|█▌        | 416M/2.56G [00:03<00:20, 115MB/s] 16%|█▋        | 427M/2.56G [00:04<00:19, 115MB/s] 17%|█▋        | 438M/2.56G [00:04<00:19, 115MB/s] 17%|█▋        | 449M/2.56G [00:04<00:20, 112MB/s] 18%|█▊        | 460M/2.56G [00:04<00:20, 113MB/s] 18%|█▊        | 471M/2.56G [00:04<00:19, 114MB/s] 18%|█▊        | 482M/2.56G [00:04<00:19, 114MB/s] 19%|█▉        | 493M/2.56G [00:04<00:19, 115MB/s] 19%|█▉        | 504M/2.56G [00:04<00:19, 115MB/s] 20%|█▉        | 515M/2.56G [00:04<00:19, 115MB/s] 20%|██        | 526M/2.56G [00:04<00:19, 115MB/s] 21%|██        | 538M/2.56G [00:05<00:18, 115MB/s] 21%|██        | 549M/2.56G [00:05<00:18, 116MB/s] 21%|██▏       | 560M/2.56G [00:05<00:18, 115MB/s] 22%|██▏       | 571M/2.56G [00:05<00:18, 116MB/s] 22%|██▏       | 582M/2.56G [00:05<00:18, 116MB/s] 23%|██▎       | 593M/2.56G [00:05<00:18, 116MB/s] 23%|██▎       | 604M/2.56G [00:05<00:18, 116MB/s] 23%|██▎       | 616M/2.56G [00:05<00:18, 116MB/s] 24%|██▍       | 627M/2.56G [00:05<00:18, 116MB/s] 24%|██▍       | 638M/2.56G [00:05<00:17, 116MB/s] 25%|██▍       | 649M/2.56G [00:06<00:17, 116MB/s] 25%|██▌       | 660M/2.56G [00:06<00:17, 116MB/s] 26%|██▌       | 671M/2.56G [00:06<00:17, 116MB/s] 26%|██▌       | 682M/2.56G [00:06<00:17, 116MB/s] 26%|██▋       | 693M/2.56G [00:06<00:17, 116MB/s] 27%|██▋       | 704M/2.56G [00:06<00:17, 116MB/s] 27%|██▋       | 716M/2.56G [00:06<00:17, 116MB/s] 28%|██▊       | 727M/2.56G [00:06<00:17, 115MB/s] 28%|██▊       | 738M/2.56G [00:06<00:17, 114MB/s] 29%|██▊       | 749M/2.56G [00:06<00:17, 113MB/s] 29%|██▉       | 760M/2.56G [00:07<00:17, 114MB/s] 29%|██▉       | 771M/2.56G [00:07<00:16, 115MB/s] 30%|██▉       | 782M/2.56G [00:07<00:16, 115MB/s] 30%|███       | 793M/2.56G [00:07<00:16, 115MB/s] 31%|███       | 804M/2.56G [00:07<00:16, 115MB/s] 31%|███       | 815M/2.56G [00:07<00:16, 115MB/s] 32%|███▏      | 826M/2.56G [00:07<00:16, 115MB/s] 32%|███▏      | 837M/2.56G [00:07<00:16, 114MB/s] 32%|███▏      | 848M/2.56G [00:07<00:16, 114MB/s] 33%|███▎      | 860M/2.56G [00:07<00:16, 115MB/s] 33%|███▎      | 870M/2.56G [00:08<00:15, 115MB/s] 34%|███▎      | 882M/2.56G [00:08<00:15, 115MB/s] 34%|███▍      | 893M/2.56G [00:08<00:15, 115MB/s] 34%|███▍      | 904M/2.56G [00:08<00:15, 115MB/s] 35%|███▍      | 915M/2.56G [00:08<00:15, 115MB/s] 35%|███▌      | 926M/2.56G [00:08<00:15, 115MB/s] 36%|███▌      | 937M/2.56G [00:08<00:15, 115MB/s] 36%|███▌      | 948M/2.56G [00:08<00:15, 112MB/s] 37%|███▋      | 960M/2.56G [00:08<00:15, 114MB/s] 37%|███▋      | 970M/2.56G [00:09<00:15, 114MB/s] 37%|███▋      | 982M/2.56G [00:09<00:15, 115MB/s] 38%|███▊      | 993M/2.56G [00:09<00:14, 115MB/s] 38%|███▊      | 0.98G/2.56G [00:09<00:14, 115MB/s] 39%|███▊      | 0.99G/2.56G [00:09<00:14, 115MB/s] 39%|███▉      | 1.00G/2.56G [00:09<00:14, 115MB/s] 40%|███▉      | 1.01G/2.56G [00:09<00:14, 115MB/s] 40%|███▉      | 1.02G/2.56G [00:09<00:14, 116MB/s] 40%|████      | 1.03G/2.56G [00:09<00:14, 116MB/s] 41%|████      | 1.05G/2.56G [00:09<00:14, 116MB/s] 41%|████▏     | 1.06G/2.56G [00:10<00:13, 116MB/s] 42%|████▏     | 1.07G/2.56G [00:10<00:13, 116MB/s] 42%|████▏     | 1.08G/2.56G [00:10<00:13, 116MB/s] 43%|████▎     | 1.09G/2.56G [00:10<00:13, 116MB/s] 43%|████▎     | 1.10G/2.56G [00:10<00:13, 116MB/s] 43%|████▎     | 1.11G/2.56G [00:10<00:13, 115MB/s] 44%|████▍     | 1.12G/2.56G [00:10<00:13, 115MB/s] 44%|████▍     | 1.13G/2.56G [00:10<00:13, 114MB/s] 45%|████▍     | 1.14G/2.56G [00:10<00:13, 115MB/s] 45%|████▌     | 1.15G/2.56G [00:10<00:13, 115MB/s] 45%|████▌     | 1.16G/2.56G [00:11<00:12, 115MB/s] 46%|████▌     | 1.18G/2.56G [00:11<00:12, 116MB/s] 46%|████▋     | 1.19G/2.56G [00:11<00:12, 116MB/s] 47%|████▋     | 1.20G/2.56G [00:11<00:12, 116MB/s] 47%|████▋     | 1.21G/2.56G [00:11<00:12, 113MB/s] 48%|████▊     | 1.22G/2.56G [00:11<00:12, 114MB/s] 48%|████▊     | 1.23G/2.56G [00:11<00:12, 114MB/s] 48%|████▊     | 1.24G/2.56G [00:11<00:12, 115MB/s] 49%|████▉     | 1.25G/2.56G [00:11<00:12, 115MB/s] 49%|████▉     | 1.26G/2.56G [00:11<00:12, 115MB/s] 50%|████▉     | 1.27G/2.56G [00:12<00:11, 116MB/s] 50%|█████     | 1.28G/2.56G [00:12<00:11, 116MB/s] 51%|█████     | 1.30G/2.56G [00:12<00:11, 116MB/s] 51%|█████     | 1.31G/2.56G [00:12<00:11, 115MB/s] 51%|█████▏    | 1.32G/2.56G [00:12<00:11, 115MB/s] 52%|█████▏    | 1.33G/2.56G [00:12<00:11, 115MB/s] 52%|█████▏    | 1.34G/2.56G [00:12<00:11, 115MB/s] 53%|█████▎    | 1.35G/2.56G [00:12<00:11, 115MB/s] 53%|█████▎    | 1.36G/2.56G [00:12<00:11, 115MB/s] 54%|█████▎    | 1.37G/2.56G [00:12<00:11, 115MB/s] 54%|█████▍    | 1.38G/2.56G [00:13<00:10, 116MB/s] 54%|█████▍    | 1.39G/2.56G [00:13<00:10, 116MB/s] 55%|█████▍    | 1.40G/2.56G [00:13<00:10, 115MB/s] 55%|█████▌    | 1.41G/2.56G [00:13<00:10, 116MB/s] 56%|█████▌    | 1.43G/2.56G [00:13<00:10, 116MB/s] 56%|█████▌    | 1.44G/2.56G [00:13<00:10, 116MB/s] 57%|█████▋    | 1.45G/2.56G [00:13<00:10, 116MB/s] 57%|█████▋    | 1.46G/2.56G [00:13<00:10, 115MB/s] 57%|█████▋    | 1.47G/2.56G [00:13<00:10, 114MB/s] 58%|█████▊    | 1.48G/2.56G [00:13<00:10, 115MB/s] 58%|█████▊    | 1.49G/2.56G [00:14<00:10, 115MB/s] 59%|█████▊    | 1.50G/2.56G [00:14<00:09, 115MB/s] 59%|█████▉    | 1.51G/2.56G [00:14<00:09, 115MB/s] 59%|█████▉    | 1.52G/2.56G [00:14<00:09, 115MB/s] 60%|█████▉    | 1.53G/2.56G [00:14<00:09, 113MB/s] 60%|██████    | 1.54G/2.56G [00:14<00:09, 113MB/s] 61%|██████    | 1.55G/2.56G [00:14<00:09, 114MB/s] 61%|██████    | 1.57G/2.56G [00:14<00:09, 107MB/s] 62%|██████▏   | 1.58G/2.56G [00:14<00:09, 110MB/s] 62%|██████▏   | 1.59G/2.56G [00:15<00:09, 111MB/s] 62%|██████▏   | 1.60G/2.56G [00:15<00:09, 112MB/s] 63%|██████▎   | 1.61G/2.56G [00:15<00:09, 112MB/s] 63%|██████▎   | 1.62G/2.56G [00:15<00:08, 113MB/s] 64%|██████▎   | 1.63G/2.56G [00:15<00:08, 114MB/s] 64%|██████▍   | 1.64G/2.56G [00:15<00:08, 113MB/s] 65%|██████▍   | 1.65G/2.56G [00:15<00:08, 114MB/s] 65%|██████▍   | 1.66G/2.56G [00:15<00:08, 115MB/s] 65%|██████▌   | 1.67G/2.56G [00:15<00:08, 115MB/s] 66%|██████▌   | 1.68G/2.56G [00:15<00:08, 115MB/s] 66%|██████▌   | 1.69G/2.56G [00:16<00:08, 115MB/s] 67%|██████▋   | 1.71G/2.56G [00:16<00:07, 115MB/s] 67%|██████▋   | 1.72G/2.56G [00:16<00:07, 115MB/s] 67%|██████▋   | 1.73G/2.56G [00:16<00:07, 116MB/s] 68%|██████▊   | 1.74G/2.56G [00:16<00:07, 115MB/s] 68%|██████▊   | 1.75G/2.56G [00:16<00:07, 116MB/s] 69%|██████▉   | 1.76G/2.56G [00:16<00:07, 116MB/s] 69%|██████▉   | 1.77G/2.56G [00:16<00:07, 115MB/s] 70%|██████▉   | 1.78G/2.56G [00:16<00:07, 116MB/s] 70%|███████   | 1.79G/2.56G [00:16<00:07, 116MB/s] 70%|███████   | 1.80G/2.56G [00:17<00:11, 69.2MB/s] 71%|███████   | 1.81G/2.56G [00:17<00:10, 77.9MB/s] 71%|███████▏  | 1.82G/2.56G [00:17<00:09, 86.5MB/s] 72%|███████▏  | 1.84G/2.56G [00:17<00:08, 93.7MB/s] 72%|███████▏  | 1.85G/2.56G [00:17<00:07, 99.1MB/s] 73%|███████▎  | 1.86G/2.56G [00:17<00:07, 104MB/s]  73%|███████▎  | 1.87G/2.56G [00:17<00:06, 107MB/s] 73%|███████▎  | 1.88G/2.56G [00:17<00:06, 110MB/s] 74%|███████▍  | 1.89G/2.56G [00:18<00:06, 111MB/s] 74%|███████▍  | 1.90G/2.56G [00:18<00:06, 113MB/s] 75%|███████▍  | 1.91G/2.56G [00:18<00:06, 114MB/s] 75%|███████▌  | 1.92G/2.56G [00:18<00:05, 114MB/s] 76%|███████▌  | 1.93G/2.56G [00:18<00:05, 115MB/s] 76%|███████▌  | 1.94G/2.56G [00:18<00:05, 115MB/s] 76%|███████▋  | 1.96G/2.56G [00:18<00:05, 115MB/s] 77%|███████▋  | 1.97G/2.56G [00:18<00:05, 116MB/s] 77%|███████▋  | 1.98G/2.56G [00:18<00:05, 116MB/s] 78%|███████▊  | 1.99G/2.56G [00:18<00:05, 116MB/s] 78%|███████▊  | 2.00G/2.56G [00:19<00:05, 116MB/s] 79%|███████▊  | 2.01G/2.56G [00:19<00:05, 116MB/s] 79%|███████▉  | 2.02G/2.56G [00:19<00:05, 116MB/s] 79%|███████▉  | 2.03G/2.56G [00:19<00:04, 116MB/s] 80%|███████▉  | 2.04G/2.56G [00:19<00:04, 116MB/s] 80%|████████  | 2.05G/2.56G [00:19<00:04, 116MB/s] 81%|████████  | 2.06G/2.56G [00:19<00:04, 116MB/s] 81%|████████  | 2.07G/2.56G [00:19<00:04, 116MB/s] 81%|████████▏ | 2.09G/2.56G [00:19<00:04, 116MB/s] 82%|████████▏ | 2.10G/2.56G [00:19<00:04, 116MB/s] 82%|████████▏ | 2.11G/2.56G [00:20<00:04, 116MB/s] 83%|████████▎ | 2.12G/2.56G [00:20<00:04, 114MB/s] 83%|████████▎ | 2.13G/2.56G [00:20<00:04, 115MB/s] 84%|████████▎ | 2.14G/2.56G [00:20<00:03, 115MB/s] 84%|████████▍ | 2.15G/2.56G [00:20<00:03, 115MB/s] 84%|████████▍ | 2.16G/2.56G [00:20<00:03, 115MB/s] 85%|████████▍ | 2.17G/2.56G [00:20<00:03, 115MB/s] 85%|████████▌ | 2.18G/2.56G [00:20<00:03, 115MB/s] 86%|████████▌ | 2.19G/2.56G [00:20<00:03, 116MB/s] 86%|████████▌ | 2.21G/2.56G [00:20<00:03, 116MB/s] 87%|████████▋ | 2.22G/2.56G [00:21<00:03, 116MB/s] 87%|████████▋ | 2.23G/2.56G [00:21<00:03, 116MB/s] 87%|████████▋ | 2.24G/2.56G [00:21<00:02, 116MB/s] 88%|████████▊ | 2.25G/2.56G [00:21<00:02, 116MB/s] 88%|████████▊ | 2.26G/2.56G [00:21<00:02, 116MB/s] 89%|████████▊ | 2.27G/2.56G [00:21<00:02, 116MB/s] 89%|████████▉ | 2.28G/2.56G [00:21<00:02, 116MB/s] 90%|████████▉ | 2.29G/2.56G [00:21<00:02, 116MB/s] 90%|████████▉ | 2.30G/2.56G [00:21<00:02, 116MB/s] 90%|█████████ | 2.31G/2.56G [00:21<00:02, 116MB/s] 91%|█████████ | 2.32G/2.56G [00:22<00:02, 116MB/s] 91%|█████████ | 2.34G/2.56G [00:22<00:02, 116MB/s] 92%|█████████▏| 2.35G/2.56G [00:22<00:01, 116MB/s] 92%|█████████▏| 2.36G/2.56G [00:22<00:01, 116MB/s] 93%|█████████▎| 2.37G/2.56G [00:22<00:01, 116MB/s] 93%|█████████▎| 2.38G/2.56G [00:22<00:01, 116MB/s] 93%|█████████▎| 2.39G/2.56G [00:22<00:01, 116MB/s] 94%|█████████▍| 2.40G/2.56G [00:22<00:01, 116MB/s] 94%|█████████▍| 2.41G/2.56G [00:22<00:01, 116MB/s] 95%|█████████▍| 2.42G/2.56G [00:22<00:01, 116MB/s] 95%|█████████▌| 2.43G/2.56G [00:23<00:01, 116MB/s] 95%|█████████▌| 2.44G/2.56G [00:23<00:01, 116MB/s] 96%|█████████▌| 2.45G/2.56G [00:23<00:00, 116MB/s] 96%|█████████▋| 2.47G/2.56G [00:23<00:00, 116MB/s] 97%|█████████▋| 2.48G/2.56G [00:23<00:00, 116MB/s] 97%|█████████▋| 2.49G/2.56G [00:23<00:00, 116MB/s] 98%|█████████▊| 2.50G/2.56G [00:23<00:00, 116MB/s] 98%|█████████▊| 2.51G/2.56G [00:23<00:00, 115MB/s] 98%|█████████▊| 2.52G/2.56G [00:23<00:00, 116MB/s] 99%|█████████▉| 2.53G/2.56G [00:23<00:00, 116MB/s] 99%|█████████▉| 2.54G/2.56G [00:24<00:00, 116MB/s]100%|█████████▉| 2.55G/2.56G [00:24<00:00, 116MB/s]100%|██████████| 2.56G/2.56G [00:24<00:00, 113MB/s]
+[2026-04-12 08:22:24]   LJ Speech failed: Could not load libtorchcodec. Likely causes:
+          1. FFmpeg is not properly installed in your environment. We support
+             versions 4, 5, 6, 7, and 8, and we attempt to load libtorchcodec
+             for each of those versions. Errors for versions not installed on
+             your system are expected; only the error for your installed FFmpeg
+             version is relevant. On Windows, ensure you've installed the
+             "full-shared" version which ships DLLs.
+          2. The PyTorch version (2.11.0+cu130) is not compatible with
+             this version of TorchCodec. Refer to the version compatibility
+             table:
+             https://github.com/pytorch/torchcodec?tab=readme-ov-file#installing-torchcodec.
+          3. Another runtime dependency; see exceptions below.
+
+        The following exceptions were raised as we tried to load libtorchcodec:
+        
+[start of libtorchcodec loading traceback]
+FFmpeg version 8:
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.60: cannot open shared object file: No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/_core/ops.py", line 57, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: /home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/libtorchcodec_core8.so
+
+FFmpeg version 7:
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.59: cannot open shared object file: No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/_core/ops.py", line 57, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: /home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/libtorchcodec_core7.so
+
+FFmpeg version 6:
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: /home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/libtorchcodec_core6.so: undefined symbol: _ZN3c1013MessageLoggerC1EPKciib
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/_core/ops.py", line 57, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: /home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/libtorchcodec_core6.so
+
+FFmpeg version 5:
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.57: cannot open shared object file: No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/_core/ops.py", line 57, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: /home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/libtorchcodec_core5.so
+
+FFmpeg version 4:
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1503, in load_library
+    ctypes.CDLL(path)
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 379, in __init__
+    self._handle = _dlopen(self._name, mode)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: libavutil.so.56: cannot open shared object file: No such file or directory
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/_core/ops.py", line 57, in load_torchcodec_shared_libraries
+    torch.ops.load_library(core_library_path)
+  File "/home/user1-gpu/.local/lib/python3.12/site-packages/torch/_ops.py", line 1505, in load_library
+    raise OSError(f"Could not load this library: {path}") from e
+OSError: Could not load this library: /home/user1-gpu/.local/lib/python3.12/site-packages/torchcodec/libtorchcodec_core4.so
+[end of libtorchcodec loading traceback].
+[2026-04-12 08:22:24]   Falling back to torchaudio.datasets.YESNO (tiny but real speech)
+[2026-04-12 08:22:24]   YESNO also failed: [Errno 2] No such file or directory: '/tmp/yesno/waves_yesno.tar.gz.6382b66c98b047e582c96964cf8599a7.partial'
+[2026-04-12 08:22:24]   Generating high-quality synthetic speech (formants + modulation)
+[2026-04-12 08:22:25]   Generating piano music...
+[2026-04-12 08:22:26] P8-E4b FAILED: No module named 'weekend_experiments'
+Traceback (most recent call last):
+  File "/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py", line 642, in main
+    run_p8_e4b()
+  File "/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py", line 149, in run_p8_e4b
+    from weekend_experiments.phase3_audio_and_controlled_entropy import AudioFrameDataset, AudioPredictor
+ModuleNotFoundError: No module named 'weekend_experiments'
+[2026-04-12 08:22:26] ============================================================
+[2026-04-12 08:22:26] P7 PCFG DEPTH SWEEP: Fitting f(structural_depth)
+[2026-04-12 08:22:26] ============================================================
+[2026-04-12 08:22:26] 
+  Generating PCFG at depth=1...
+[2026-04-12 08:22:56]     depth=1: H=8.0000 bits, 20000000 symbols, 256 unique
+
+
+
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2026-04-12 08:24:04]     Train: 37690332 tokens, Eval: 4187837 tokens
+[2026-04-12 08:24:13]     Training depth=1 seed=42...
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:384: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:401: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+`use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`...
+[2026-04-12 08:24:54]       step 2000/10000, loss=2.8282
+[2026-04-12 08:25:35]       step 4000/10000, loss=2.7868
+[2026-04-12 08:26:15]       step 6000/10000, loss=2.7322
+[2026-04-12 08:26:55]       step 8000/10000, loss=2.6733
+[2026-04-12 08:27:36]       step 10000/10000, loss=2.6988
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:28:19]       depth=1: BPT=3.8224, shuffled=3.8228, bonus=0.0004
+[2026-04-12 08:28:20] 
+  Generating PCFG at depth=2...
+[2026-04-12 08:28:55]     depth=2: H=8.0000 bits, 20000000 symbols, 256 unique
+
+
+
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2026-04-12 08:30:02]     Train: 37689522 tokens, Eval: 4188713 tokens
+[2026-04-12 08:30:10]     Training depth=2 seed=42...
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:384: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:401: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:30:52]       step 2000/10000, loss=2.8191
+[2026-04-12 08:31:33]       step 4000/10000, loss=2.7018
+[2026-04-12 08:32:13]       step 6000/10000, loss=2.5851
+[2026-04-12 08:32:55]       step 8000/10000, loss=2.7006
+[2026-04-12 08:33:35]       step 10000/10000, loss=2.5797
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:34:19]       depth=2: BPT=3.8210, shuffled=3.8222, bonus=0.0012
+[2026-04-12 08:34:20] 
+  Generating PCFG at depth=3...
+[2026-04-12 08:34:57]     depth=3: H=8.0000 bits, 20000000 symbols, 256 unique
+
+
+
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2026-04-12 08:36:01]     Train: 37690641 tokens, Eval: 4187064 tokens
+[2026-04-12 08:36:09]     Training depth=3 seed=42...
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:384: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:401: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:36:51]       step 2000/10000, loss=2.8638
+[2026-04-12 08:37:32]       step 4000/10000, loss=2.8611
+[2026-04-12 08:38:12]       step 6000/10000, loss=2.7380
+[2026-04-12 08:38:53]       step 8000/10000, loss=2.6378
+[2026-04-12 08:39:35]       step 10000/10000, loss=2.7297
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:40:18]       depth=3: BPT=3.8248, shuffled=3.8238, bonus=-0.0010
+[2026-04-12 08:40:19] 
+  Generating PCFG at depth=5...
+[2026-04-12 08:40:57]     depth=5: H=8.0000 bits, 20000000 symbols, 256 unique
+
+
+
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2026-04-12 08:42:00]     Train: 37690642 tokens, Eval: 4187995 tokens
+[2026-04-12 08:42:09]     Training depth=5 seed=42...
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:384: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:401: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:42:51]       step 2000/10000, loss=2.9010
+[2026-04-12 08:43:33]       step 4000/10000, loss=2.7463
+[2026-04-12 08:44:20]       step 6000/10000, loss=2.7316
+[2026-04-12 08:45:14]       step 8000/10000, loss=2.7128
+[2026-04-12 08:46:09]       step 10000/10000, loss=2.7108
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:46:58]       depth=5: BPT=3.8331, shuffled=3.8317, bonus=-0.0014
+[2026-04-12 08:46:59] 
+  Generating PCFG at depth=8...
+[2026-04-12 08:47:42]     depth=8: H=8.0000 bits, 20000000 symbols, 256 unique
+
+
+
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2026-04-12 08:48:50]     Train: 37687574 tokens, Eval: 4187186 tokens
+[2026-04-12 08:48:58]     Training depth=8 seed=42...
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:384: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:401: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:49:48]       step 2000/10000, loss=2.8444
+[2026-04-12 08:50:41]       step 4000/10000, loss=2.7769
+[2026-04-12 08:51:32]       step 6000/10000, loss=2.7850
+[2026-04-12 08:52:26]       step 8000/10000, loss=2.6302
+[2026-04-12 08:53:20]       step 10000/10000, loss=2.7748
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:422: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/round2_followups.py:435: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 08:54:11]       depth=8: BPT=3.8229, shuffled=3.8227, bonus=-0.0001
+[2026-04-12 08:54:11] 
+  Fitting f(depth)...
+[2026-04-12 08:54:11]     logarithmic: R²=0.0853, params={'a': -0.00020581386333975082, 'r2': 0.08529475783913909}
+[2026-04-12 08:54:11]     saturating: R²=0.1131, params={'a': -0.0009864548319025474, 'b': 0.10762946621695446, 'r2': 0.113055544519023}
+[2026-04-12 08:54:11]     power: R²=0.0427, params={'a': 0.0005407497789924554, 'b': -2.18940216183174, 'r2': 0.042732853720779396}
+[2026-04-12 08:54:12]   Plot saved
+[2026-04-12 08:54:13] PCFG DEPTH SWEEP COMPLETE
+[2026-04-12 08:54:13] ============================================================
+[2026-04-12 08:54:13] P7 TAU RE-MEASUREMENT IN BITS PER SOURCE BYTE
+[2026-04-12 08:54:13] ============================================================
+[2026-04-12 08:54:16]   WikiText-2 test: 1288512 chars, 1290546 bytes
+[2026-04-12 08:54:16] 
+  Evaluating EleutherAI/pythia-160m...
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+[2026-04-12 08:54:24]     288969 tokens, 1290546 bytes → 4.47 bytes/token
+[2026-04-12 08:54:24]     BPT=5.0007, bits/char=1.1215, bits/byte=1.1197
+[2026-04-12 08:54:24] 
+  Evaluating EleutherAI/pythia-410m...
+[2026-04-12 08:54:28]     288969 tokens, 1290546 bytes → 4.47 bytes/token
+[2026-04-12 08:54:28]     BPT=4.2688, bits/char=0.9573, bits/byte=0.9558
+[2026-04-12 08:54:28] 
+  Evaluating EleutherAI/pythia-1.4b...
+[2026-04-12 08:54:58]     288969 tokens, 1290546 bytes → 4.47 bytes/token
+[2026-04-12 08:54:59]     BPT=3.8112, bits/char=0.8547, bits/byte=0.8534
+[2026-04-12 08:54:59] 
+  Evaluating gpt2-medium...
+Token indices sequence length is longer than the specified maximum sequence length for this model (286177 > 1024). Running this sequence through the model will result in indexing errors
+[2026-04-12 08:55:17]     286177 tokens, 1290546 bytes → 4.51 bytes/token
+[2026-04-12 08:55:18]     BPT=4.5169, bits/char=1.0032, bits/byte=1.0016
+[2026-04-12 08:55:18] TAU RE-MEASUREMENT COMPLETE
+[2026-04-12 08:55:18] 
+============================================================
+[2026-04-12 08:55:18] ROUND 2 COMPLETE
+[2026-04-12 08:55:18] ============================================================
