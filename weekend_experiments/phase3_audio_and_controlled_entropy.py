@@ -635,7 +635,7 @@ def run_p8_e6():
                            'note': 'Requires unified tokenizer — recorded as placeholder'})
             log(f"    {mode}: placeholder (requires unified tokenizer architecture)")
 
-        del model if 'model' in dir() else None
+        pass  # model cleanup handled per-mode
         torch.cuda.empty_cache()
 
     save_csv(results, f"{OUTDIR}/results/crossmodal.csv")

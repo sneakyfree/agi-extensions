@@ -1,1 +1,223 @@
-Waiting for Phase 1-2 orchestrator (PID 1664092) to finish...
+[2026-04-12 00:48:50] ============================================================
+[2026-04-12 00:48:50] PHASE 3-5: AUDIO + CONTROLLED ENTROPY + CROSS-MODAL
+[2026-04-12 00:48:50] ============================================================
+[2026-04-12 00:48:50] ============================================================
+[2026-04-12 00:48:50] P8-E4: AUDIO FROM SCRATCH
+[2026-04-12 00:48:50] ============================================================
+[2026-04-12 00:48:50] 
+  Processing speech...
+[2026-04-12 00:48:50]     Downloading LJ Speech...
+[2026-04-12 00:48:50]     LJ Speech download failed: [Errno 2] No such file or directory: '/tmp/ljspeech/LJSpeech-1.1.tar.bz2.5cd9ab870729449d9ee717f5a6229ec7.partial', generating synthetic speech-like audio
+[2026-04-12 00:48:50]     Audio length: 300 seconds
+[2026-04-12 00:49:03]     Mel frames: (12920, 128)
+[2026-04-12 00:49:03]   Frame variance: 0.999914
+[2026-04-12 00:49:03] 
+  Training speech (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:195: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:212: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 00:50:00]     step 5000/30000, loss=0.027421
+[2026-04-12 00:50:55]     step 10000/30000, loss=0.013662
+[2026-04-12 00:51:48]     step 15000/30000, loss=0.011013
+[2026-04-12 00:52:41]     step 20000/30000, loss=0.010428
+[2026-04-12 00:53:35]     step 25000/30000, loss=0.009870
+[2026-04-12 00:54:31]     step 30000/30000, loss=0.009778
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:237: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:275: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 00:54:32]     speech seed=42: bits/frame_dim=1.7946, bonus=-0.2661
+[2026-04-12 00:54:32] 
+  Training speech (seed=137)...
+[2026-04-12 00:55:25]     step 5000/30000, loss=0.027445
+[2026-04-12 00:56:18]     step 10000/30000, loss=0.013650
+[2026-04-12 00:57:12]     step 15000/30000, loss=0.011223
+[2026-04-12 00:58:08]     step 20000/30000, loss=0.010327
+[2026-04-12 00:59:02]     step 25000/30000, loss=0.009912
+[2026-04-12 00:59:56]     step 30000/30000, loss=0.009746
+[2026-04-12 00:59:57]     speech seed=137: bits/frame_dim=1.7976, bonus=-0.2662
+[2026-04-12 00:59:57] 
+  Processing music...
+[2026-04-12 00:59:57]     Generating synthetic music (piano-like tones)...
+[2026-04-12 00:59:58]     Audio length: 300 seconds
+[2026-04-12 00:59:59]     Mel frames: (12920, 128)
+[2026-04-12 00:59:59]   Frame variance: 0.970961
+[2026-04-12 00:59:59] 
+  Training music (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:195: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:212: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:00:56]     step 5000/30000, loss=0.021569
+[2026-04-12 01:01:49]     step 10000/30000, loss=0.012024
+[2026-04-12 01:02:43]     step 15000/30000, loss=0.008246
+[2026-04-12 01:03:37]     step 20000/30000, loss=0.005543
+[2026-04-12 01:04:32]     step 25000/30000, loss=0.003437
+[2026-04-12 01:05:27]     step 30000/30000, loss=0.003281
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:237: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:275: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:05:29]     music seed=42: bits/frame_dim=1.6295, bonus=-1.5880
+[2026-04-12 01:05:29] 
+  Training music (seed=137)...
+[2026-04-12 01:06:25]     step 5000/30000, loss=0.016182
+[2026-04-12 01:07:19]     step 10000/30000, loss=0.008839
+[2026-04-12 01:08:21]     step 15000/30000, loss=0.007608
+[2026-04-12 01:09:14]     step 20000/30000, loss=0.005814
+[2026-04-12 01:10:08]     step 25000/30000, loss=0.002906
+[2026-04-12 01:11:03]     step 30000/30000, loss=0.002720
+[2026-04-12 01:11:04]     music seed=137: bits/frame_dim=1.7473, bonus=-1.7254
+[2026-04-12 01:11:05] 
+  Processing noise...
+[2026-04-12 01:11:05]     Generating white noise...
+[2026-04-12 01:11:05]     Audio length: 300 seconds
+[2026-04-12 01:11:07]     Mel frames: (12920, 128)
+[2026-04-12 01:11:07]   Frame variance: 0.999216
+[2026-04-12 01:11:07] 
+  Training noise (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:195: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:212: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:12:02]     step 5000/30000, loss=0.158388
+[2026-04-12 01:12:57]     step 10000/30000, loss=0.124810
+[2026-04-12 01:13:57]     step 15000/30000, loss=0.114635
+[2026-04-12 01:14:53]     step 20000/30000, loss=0.110135
+[2026-04-12 01:15:49]     step 25000/30000, loss=0.107357
+[2026-04-12 01:16:45]     step 30000/30000, loss=0.107109
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:237: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:275: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:16:46]     noise seed=42: bits/frame_dim=0.0000, bonus=0.0000
+[2026-04-12 01:16:46] 
+  Training noise (seed=137)...
+[2026-04-12 01:17:41]     step 5000/30000, loss=0.159823
+[2026-04-12 01:18:39]     step 10000/30000, loss=0.127088
+[2026-04-12 01:19:33]     step 15000/30000, loss=0.116297
+[2026-04-12 01:20:27]     step 20000/30000, loss=0.110257
+[2026-04-12 01:21:22]     step 25000/30000, loss=0.108127
+[2026-04-12 01:22:17]     step 30000/30000, loss=0.107200
+[2026-04-12 01:22:18]     noise seed=137: bits/frame_dim=0.0000, bonus=0.0000
+[2026-04-12 01:22:19] P8-E4 COMPLETE
+[2026-04-12 01:22:19] ============================================================
+[2026-04-12 01:22:19] P8-E2: CONTROLLED VISUAL ENTROPY TRAINING
+[2026-04-12 01:22:19] ============================================================
+[2026-04-12 01:22:19]   Generating synthetic image datasets...
+[2026-04-12 01:22:32]   Measuring source entropies...
+[2026-04-12 01:22:32]     VIMG_LOW: H_gzip = 5.724 bpp, 5000 images
+[2026-04-12 01:22:32]     VIMG_MED: H_gzip = 0.320 bpp, 5000 images
+[2026-04-12 01:22:32]     VIMG_HIGH: H_gzip = 8.008 bpp, 5000 images
+[2026-04-12 01:22:32]     VIMG_NAT: H_gzip = 6.458 bpp, 5000 images
+[2026-04-12 01:22:34] 
+  Training VIMG_LOW (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:433: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:450: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:24:31]     step 5000/30000, loss=0.001053
+[2026-04-12 01:26:29]     step 10000/30000, loss=0.000636
+[2026-04-12 01:28:24]     step 15000/30000, loss=0.000586
+[2026-04-12 01:30:19]     step 20000/30000, loss=0.000564
+[2026-04-12 01:32:16]     step 25000/30000, loss=0.000560
+[2026-04-12 01:34:12]     step 30000/30000, loss=0.000553
+/home/user1-gpu/agi-extensions/paper8/p8a_v2_visual_cascade/run_p8a_v2.py:185: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:34:13]     VIMG_LOW: H_gzip=5.726, bits/px=3.6175
+[2026-04-12 01:34:14] 
+  Training VIMG_MED (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:433: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:450: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:36:14]     step 5000/30000, loss=0.023324
+[2026-04-12 01:38:00]     step 10000/30000, loss=0.014928
+[2026-04-12 01:39:46]     step 15000/30000, loss=0.009591
+[2026-04-12 01:41:30]     step 20000/30000, loss=0.008086
+[2026-04-12 01:43:16]     step 25000/30000, loss=0.006162
+[2026-04-12 01:45:00]     step 30000/30000, loss=0.006445
+/home/user1-gpu/agi-extensions/paper8/p8a_v2_visual_cascade/run_p8a_v2.py:185: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:45:01]     VIMG_MED: H_gzip=0.314, bits/px=0.9406
+[2026-04-12 01:45:02] 
+  Training VIMG_HIGH (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:433: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:450: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:46:47]     step 5000/30000, loss=0.084176
+[2026-04-12 01:48:32]     step 10000/30000, loss=0.084142
+[2026-04-12 01:50:17]     step 15000/30000, loss=0.083012
+[2026-04-12 01:52:01]     step 20000/30000, loss=0.080577
+[2026-04-12 01:53:45]     step 25000/30000, loss=0.079179
+[2026-04-12 01:55:29]     step 30000/30000, loss=0.078741
+/home/user1-gpu/agi-extensions/paper8/p8a_v2_visual_cascade/run_p8a_v2.py:185: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:55:30]     VIMG_HIGH: H_gzip=8.008, bits/px=0.0000
+[2026-04-12 01:55:31] 
+  Training VIMG_NAT (seed=42)...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:433: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:450: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 01:57:17]     step 5000/30000, loss=0.023545
+[2026-04-12 01:58:58]     step 10000/30000, loss=0.017182
+[2026-04-12 02:00:42]     step 15000/30000, loss=0.011826
+[2026-04-12 02:02:26]     step 20000/30000, loss=0.009656
+[2026-04-12 02:04:10]     step 25000/30000, loss=0.010598
+[2026-04-12 02:05:53]     step 30000/30000, loss=0.008583
+/home/user1-gpu/agi-extensions/paper8/p8a_v2_visual_cascade/run_p8a_v2.py:185: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 02:05:54]     VIMG_NAT: H_gzip=6.571, bits/px=0.7614
+[2026-04-12 02:05:55] P8-E2 COMPLETE
+[2026-04-12 02:05:55] ============================================================
+[2026-04-12 02:05:55] P8-E6: CROSS-MODAL TRAINING
+[2026-04-12 02:05:55] ============================================================
+/home/user1-gpu/.local/lib/python3.12/site-packages/transformers/tokenization_utils_base.py:1617: FutureWarning: `clean_up_tokenization_spaces` was not set. It will be set to `True` by default. This behavior will be deprecated in transformers v4.45, and will be then set to `False` by default. For more details check this issue: https://github.com/huggingface/transformers/issues/31884
+  warnings.warn(
+Token indices sequence length is longer than the specified maximum sequence length for this model (2415650 > 1024). Running this sequence through the model will result in indexing errors
+[2026-04-12 02:06:14]   Image sequences: 5000, patches/img: 36
+[2026-04-12 02:06:14]   Text tokens: 500000
+[2026-04-12 02:06:14] 
+  Training text_only...
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:596: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = GradScaler()
+/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py:604: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with autocast():
+[2026-04-12 02:06:25]     step 2000, loss=5.1173
+[2026-04-12 02:06:37]     step 4000, loss=4.2604
+[2026-04-12 02:06:50]     step 6000, loss=4.4635
+[2026-04-12 02:07:00]     step 8000, loss=4.3857
+[2026-04-12 02:07:12]     step 10000, loss=4.3664
+[2026-04-12 02:07:13]     text_only: text BPT = 9.9473
+[2026-04-12 02:07:13] 
+  Training image_only...
+[2026-04-12 02:07:13]     image_only: placeholder (requires unified tokenizer architecture)
+[2026-04-12 02:07:13] 
+  Training mixed...
+[2026-04-12 02:07:13]     mixed: placeholder (requires unified tokenizer architecture)
+[2026-04-12 02:07:13] P8-E6 FAILED: dict contains fields not in fieldnames: 'note'
+Traceback (most recent call last):
+  File "/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py", line 780, in main
+    run_p8_e6()
+  File "/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py", line 641, in run_p8_e6
+    save_csv(results, f"{OUTDIR}/results/crossmodal.csv")
+  File "/home/user1-gpu/agi-extensions/weekend_experiments/phase3_audio_and_controlled_entropy.py", line 41, in save_csv
+    w.writerows(data)
+  File "/usr/lib/python3.12/csv.py", line 167, in writerows
+    return self.writer.writerows(map(self._dict_to_list, rowdicts))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/csv.py", line 159, in _dict_to_list
+    raise ValueError("dict contains fields not in fieldnames: "
+ValueError: dict contains fields not in fieldnames: 'note'
+[2026-04-12 02:07:13] ============================================================
+[2026-04-12 02:07:13] P8-E5: CROSS-MODAL COVER FIGURE
+[2026-04-12 02:07:13] ============================================================
+[2026-04-12 02:07:14] Cover figure saved
+[2026-04-12 02:07:15] P8-E5 COMPLETE
+[2026-04-12 02:07:15] 
+============================================================
+[2026-04-12 02:07:15] ALL PHASES COMPLETE
+[2026-04-12 02:07:15] ============================================================
