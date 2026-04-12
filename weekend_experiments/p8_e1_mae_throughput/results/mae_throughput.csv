@@ -1,0 +1,3 @@
+model,model_name,n_params,mae_loss,pixel_variance,bits_per_pixel,n_images
+MAE-Base,facebook/vit-mae-base,111907840,0.009678597599267959,0.06552044,1.3795375932472567,1600
+MAE-Large,facebook/vit-mae-large,329541888,0.009395161848515273,0.06552044,1.400977595969831,1600
