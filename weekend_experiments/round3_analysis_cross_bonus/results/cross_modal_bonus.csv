@@ -1,0 +1,6 @@
+modality,bonus_raw,unit,tokens_per_sec,bonus_per_sec,source
+Language (text),6.7,bits/token,20.8,139.36,Paper 6
+Vision (spatial),0.69,bits/pixel,829440,572313.5999999999,P8-A v2 cascade
+Audio (speech temporal),0.63,bits/mel_dim,5504,3467.52,Exp 1 speech
+Audio (music temporal),2.83,bits/mel_dim,5504,15576.32,Exp 1 music
+PCFG-8 (synthetic hierarchy),5.33,bits/token,20.8,110.864,Paper 7 R6
