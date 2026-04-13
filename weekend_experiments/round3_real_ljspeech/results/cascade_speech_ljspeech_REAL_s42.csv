@@ -1,0 +1,5 @@
+source,seed,mode,mse,bits_per_dim
+speech_ljspeech_REAL,42,original,0.07087383261335908,1.8852513790945782
+speech_ljspeech_REAL,42,utterance_shuffled,0.07829523681620822,1.8134156416040021
+speech_ljspeech_REAL,42,segment_shuffled,0.07128557478930259,1.8810728300470512
+speech_ljspeech_REAL,42,frame_shuffled,1.34081995926092,0.0
