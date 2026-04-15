@@ -1,0 +1,13 @@
+method,audio_type,entropy_bits_per_frame,total_frames
+wav2vec2_fp32,silence,1.3091,1992
+wav2vec2_fp32,pure_440hz,2.9639,1992
+wav2vec2_fp32,chord_3note,0.6604,1992
+wav2vec2_fp32,white_noise,1.5196,1992
+wav2vec2_fp32,pink_noise,1.3302,1992
+wav2vec2_fp32,am_sweep,0.582,1992
+mel_spectrogram,silence,0.0,626
+mel_spectrogram,pure_440hz,5.3495,626
+mel_spectrogram,chord_3note,5.371,626
+mel_spectrogram,white_noise,6.3004,626
+mel_spectrogram,pink_noise,6.2769,626
+mel_spectrogram,am_sweep,5.2982,626
