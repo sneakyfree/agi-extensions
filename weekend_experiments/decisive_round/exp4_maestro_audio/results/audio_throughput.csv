@@ -1,0 +1,8 @@
+audio_type,entropy_bits_per_frame,total_frames
+silence,nan,1992
+pure_440hz,nan,1992
+chord_3note,nan,1992
+white_noise,nan,1992
+pink_noise,nan,1992
+am_sweep,nan,1992
+synth_piano,nan,1992
