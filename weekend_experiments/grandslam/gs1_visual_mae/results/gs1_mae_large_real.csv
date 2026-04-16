@@ -1,0 +1,10 @@
+dataset,mae_loss,n_images
+CIFAR-100,0.062688,10000
+STL-10,0.163544,8000
+synthetic_uniform,0.000108,1000
+synthetic_4-color-blocks,1.946552,1000
+synthetic_16-color-blocks,2.373395,1000
+synthetic_64-color-pixels,1.86131,1000
+synthetic_natural-like,0.138662,1000
+synthetic_gaussian-noise,1.127743,1000
+synthetic_uniform-noise,1.633487,1000
