@@ -440,6 +440,43 @@ tr:hover td { background: var(--surface); }
 
   <p>This confirms that f(structural_depth) is not about raw syntactic complexity &mdash; it is about how much of the structure the <em>specific model</em> can exploit based on what it learned during training. A model trained on PCFGs would show the opposite pattern.</p>
 
+  <h2>And when we trained from scratch</h2>
+
+  <p>The pretrained-GPT-2 result above invites the obvious objection: maybe the depth pattern is an artifact of GPT-2&rsquo;s training distribution rather than a property of the data. So we trained a 25-million-parameter transformer from scratch on each PCFG depth, three independent seeds each. The model now sees only the data we give it &mdash; no English bias. Result:</p>
+
+  <table style="margin: 1.5rem auto; border-collapse: collapse; font-family: var(--sans); font-size: 0.95rem;">
+    <tr style="border-bottom: 2px solid var(--text-faint);">
+      <th style="padding: 0.5rem 1rem; text-align: left;">Source</th>
+      <th style="padding: 0.5rem 1rem; text-align: right;">BPT (mean ± std)</th>
+      <th style="padding: 0.5rem 1rem; text-align: right;">95% CI</th>
+    </tr>
+    <tr><td style="padding: 0.4rem 1rem;">Random word salad</td><td style="padding: 0.4rem 1rem; text-align: right;">5.968 ± 0.002</td><td style="padding: 0.4rem 1rem; text-align: right;">[5.966, 5.970]</td></tr>
+    <tr><td style="padding: 0.4rem 1rem;">PCFG depth 0</td><td style="padding: 0.4rem 1rem; text-align: right;">3.217 ± 0.001</td><td style="padding: 0.4rem 1rem; text-align: right;">[3.216, 3.219]</td></tr>
+    <tr><td style="padding: 0.4rem 1rem;">PCFG depth 3</td><td style="padding: 0.4rem 1rem; text-align: right;">3.757 ± 0.001</td><td style="padding: 0.4rem 1rem; text-align: right;">[3.756, 3.758]</td></tr>
+    <tr><td style="padding: 0.4rem 1rem;">PCFG depth 6</td><td style="padding: 0.4rem 1rem; text-align: right;">3.790 ± 0.001</td><td style="padding: 0.4rem 1rem; text-align: right;">[3.789, 3.791]</td></tr>
+  </table>
+
+  <p>Standard deviations of ±0.001 across three random seeds &mdash; three orders of magnitude smaller than the effect size. The model learns shallow grammar to convergence (BPT = 3.22 at depth 0) and progressively fails to compress deeper recursive structure that requires longer-range dependencies. The structural bonus salad → grammar = 2.75 bits is the visible footprint of f(structural_depth).</p>
+
+  <h2>Scale invariance of bits per character</h2>
+
+  <p>The most important methodological claim in this paper &mdash; that bits per character (or per source byte) is the right metric, and bits per token is a tokenizer artifact &mdash; deserves a direct test. We ran the same seven corpora through Pythia at three scales (160M, 410M, 1.4B parameters) and compared:</p>
+
+  <table style="margin: 1.5rem auto; border-collapse: collapse; font-family: var(--sans); font-size: 0.95rem;">
+    <tr style="border-bottom: 2px solid var(--text-faint);">
+      <th style="padding: 0.5rem 1rem; text-align: left;">Corpus</th>
+      <th style="padding: 0.5rem 1rem; text-align: right;">160M b/c</th>
+      <th style="padding: 0.5rem 1rem; text-align: right;">410M b/c</th>
+      <th style="padding: 0.5rem 1rem; text-align: right;">1.4B b/c</th>
+      <th style="padding: 0.5rem 1rem; text-align: right;">Std across scales</th>
+    </tr>
+    <tr><td style="padding: 0.4rem 1rem;">English</td><td style="padding: 0.4rem 1rem; text-align: right;">1.07</td><td style="padding: 0.4rem 1rem; text-align: right;">0.97</td><td style="padding: 0.4rem 1rem; text-align: right;">0.87</td><td style="padding: 0.4rem 1rem; text-align: right;">0.08</td></tr>
+    <tr><td style="padding: 0.4rem 1rem;">DNA</td><td style="padding: 0.4rem 1rem; text-align: right;">2.10</td><td style="padding: 0.4rem 1rem; text-align: right;">2.05</td><td style="padding: 0.4rem 1rem; text-align: right;">2.05</td><td style="padding: 0.4rem 1rem; text-align: right;">0.02</td></tr>
+    <tr><td style="padding: 0.4rem 1rem;">Medical</td><td style="padding: 0.4rem 1rem; text-align: right;">0.94</td><td style="padding: 0.4rem 1rem; text-align: right;">0.81</td><td style="padding: 0.4rem 1rem; text-align: right;">0.72</td><td style="padding: 0.4rem 1rem; text-align: right;">0.09</td></tr>
+  </table>
+
+  <p>Bits per character drops only modestly with scale (~0.2 across an 8.75&times; parameter increase) and the across-corpus ordering is preserved at every scale: DNA &gt; German &gt; French &gt; Spanish &gt; English &gt; Medical &gt; Python. Each domain&rsquo;s basin sits at a corpus-specific value that bigger models approach asymptotically. The basin is a property of the data; the model is just measuring how close it can get to it.</p>
+
   <h2>The part where we tell on ourselves</h2>
 
   <p>This is where every other version of this article would end &mdash; with the metaphor, the bow on top, the link to the PDF. We&rsquo;re going to do something else first, because the institute&rsquo;s whole job is to do this part out loud.</p>
